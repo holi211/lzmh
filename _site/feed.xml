@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Apr 2019 20:47:52 +0800</pubDate>
+    <lastBuildDate>Mon, 15 Apr 2019 20:47:52 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Ruby踩坑</title>
+        <description>&lt;h1 id=&quot;记搭blog同时踩坑ruby&quot;&gt;记搭blog，同时踩坑Ruby&lt;/h1&gt;
+&lt;h2 id=&quot;用githubjekyll搭建blog&quot;&gt;用GitHub+jekyll搭建blog&lt;/h2&gt;
+
+&lt;p&gt;本文主要介绍jekyll方面的安装与搭建&lt;/p&gt;
+
+&lt;h3 id=&quot;首先是jekyll的安装过程&quot;&gt;首先是jekyll的安装过程&lt;/h3&gt;
+
+&lt;p&gt;这里是jekyll安装与使用的&lt;a href=&quot;https://www.jekyll.com.cn/docs/home/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;1.首先下载&lt;a href=&quot;https://rubyinstaller.org/&quot;&gt;Ruby installer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2.下载Ruby with DEVKIT版本，在后续会节省很多时间。（建议2.6及以上版本）&lt;/p&gt;
+
+&lt;p&gt;3.进行Ruby的安装界面，记得勾选将PATH添加进环境中。&lt;/p&gt;
+
+&lt;p&gt;4.然后会弹出一个安装MSYS2的命令行界面，记得选3然后进行安装，然后安装完后按enter回车退出。&lt;/p&gt;
+&lt;h5 id=&quot;到这里ruby的安装基本就完成了如果中途遇到了问题可以给我留言询问&quot;&gt;到这里Ruby的安装基本就完成了，如果中途遇到了问题可以给我留言询问。&lt;/h5&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;下载jekyll&quot;&gt;下载jekyll&lt;/h3&gt;
+&lt;p&gt;我们在命令行使用gem来安装jekyll，gem会自动下载所有需要的jekyll相关的文件
+使用命令&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;第二步下载bundle&quot;&gt;第二步下载bundle&lt;/h3&gt;
+&lt;p&gt;使用命令&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install bundle&lt;/code&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;到此jekyll就已经安装完毕了如果遇到问题可以留言&quot;&gt;到此jekyll就已经安装完毕了，如果遇到问题可以留言。&lt;/h5&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;搭建自己的第一个简易的blog&quot;&gt;搭建自己的第一个简易的blog&lt;/h3&gt;
+
+&lt;p&gt;在自己想要搭建blog的文件夹下进去命令行&lt;/p&gt;
+
+&lt;p&gt;输入创建自己的blog&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new blog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在文件夹中就会出现名为”blog“的博客文件夹&lt;/p&gt;
+
+&lt;p&gt;然后在进入新生产的文件夹中，开启内置服务器&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;当显示以下画面时说明成功：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://yourdomain.com/_downloads/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后就可以在浏览器上访问本地的&lt;code class=&quot;highlighter-rouge&quot;&gt;localhost：4000&lt;/code&gt;来查看blog&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;上传blog以及blog的搭建之后再进行补充&quot;&gt;上传blog，以及blog的搭建之后再进行补充&lt;/h2&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;最后，有任何遇到的难题和不解可以向我咨询，我的邮箱是lz1mh211@163.com&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 01 Apr 2019 12:29:56 +0800</pubDate>
+        <link>http://yourdomain.com/2019/04/01/Ruby.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2019/04/01/Ruby.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>记使用jekyll的坑</title>
+        <description>&lt;h3 id=&quot;jekyll中的_posts文件上传&quot;&gt;jekyll中的_posts文件上传&lt;/h3&gt;
+&lt;p&gt;当你使用UTF-8的中文命名md文件时，jekyll是无法识别的&lt;/p&gt;
+
+&lt;p&gt;具体原因可能是因为编码问题，当你这样上传你的博客时&lt;/p&gt;
+
+&lt;p&gt;在localhost：4000上是无法显示的你博客的&lt;/p&gt;
+
+&lt;p&gt;会返回404……&lt;/p&gt;
+
+&lt;p&gt;希望大家注意编码问题，谨防踩坑。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Apr 2019 00:00:00 +0800</pubDate>
+        <link>http://yourdomain.com/2019/04/01/fuck-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2019/04/01/fuck-jekyll.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
